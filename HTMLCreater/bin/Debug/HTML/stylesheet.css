@@ -1,0 +1,202 @@
+/* WinATR_Help.html */
+
+body{
+  background-color: #E0F8F1;
+}
+.title{
+  padding:10px;
+  border-bottom:1px solid #A4A4A4;
+}
+
+.addBookMark::before{
+    content: url(Resources/image/closingBook.png);
+    margin: 10px;
+    position: relative;
+    /* top: 8px; */
+}
+.addPenMark::before{
+  content: url(Resources/image/pen.png);
+  margin: 10px;
+  position: relative;
+}
+.caption ul{
+  list-style: none;
+}
+
+.caption li::before{
+  content: url(Resources/image/openingBook.png);
+  margin: 10px;
+  position: relative;
+}
+
+/* caption */
+.captionTitle{}
+.addKtext{
+  list-style-image:url(Resources/image/Ktext.bmp);
+}
+.addKtyu{
+  list-style-image: url(Resources/image/Ktyu.bmp);
+}
+.addKpoint{
+  list-style-image: url(Resources/image/Kpoint.bmp);
+}
+
+.sentence{
+  padding-right: 1%;
+  margin-right: 5px;
+}
+EmphasisRed{
+  color: red;
+}
+EmphasisBlue{
+  color: blue;
+}
+.sentence ol{
+    list-style: decimal;
+}
+
+
+/* menu */
+/* タブ作成 -> */
+.tab{
+  display: inline-block;
+  border-width: 1px 1px 0px 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 0.75em 0.75em 0px 0px;
+  padding: 0.75em 1em;
+  font-weight:bold;
+  color: black;
+  background-color: #e0e0e0;
+}
+.tab:hover{
+  coler: green;
+  background-color: #ccffcc;
+  cursor: pointer;
+}
+input:checked+.tab{
+  color: red;
+  background-color: #ffffcc;
+  z-index: 10;
+  position: relative;
+}
+.tabbox input{
+  display: none;
+}
+.tabbox{
+  padding-bottom: 100px;
+}
+.tabcontent{
+  display: none;
+  border: 1px solid black;
+  padding: 1em;
+  background-color: #ffffcc;
+  margin-top: -1px;
+  z-index: 0;
+  position: relative;
+}
+#FileCheck:checked ~ #FileContent { display: block; }
+#AnalysisCheck:checked ~ #AnalysisContent { display: block; }
+#ViewCheck:checked ~ #ViewContent { display: block; }
+#OptionCheck:checked ~ #OptionContent { display: block; }
+/* <- タブ作成*/
+
+.menuBlock{
+  background-color: #EFFBF2;
+  width: 20em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.menuBlock li{
+  //color:#0B6121;
+  //text-decoration:underline red;
+  cursor:pointer;
+}
+.item{
+  line-height: 20px;
+  position: static;
+
+}
+
+.itemset{
+  position: absolute;
+  float: left;
+  width: auto; height: auto;
+  border: thin solid black;
+  //border-top:none;
+  background-color: white;
+  display: none;
+  line-height:110%;
+  padding:3px 6px;
+  cursor:text;
+}
+.menuBlock p{
+  position: absolute;
+  float: left;
+  width: auto; height: auto;
+  border: thin solid black;
+  background-color: white;
+}
+.menuEx{
+  //display: inline-block;
+}
+.menuEx li{
+  cursor:pointer;
+  //padding:0px 7px;
+  color:#3f9f4b;
+  list-style-type: none;
+  text-decoration: underline;
+  display:inline-block;
+  //width: 15em;
+  padding:0 3px 3px 4px;
+}
+
+/* window*/
+.imageset{
+    position: absolute;
+    //top: 340px;
+    //left: 20px;
+    font-size: 14px;
+    padding:5px 7px;
+    line-height: 110%;
+    border: thin solid black;
+    background-color: #E9F6F5;
+    width: auto; height: auto;
+    display:none;
+}
+.image{
+  cursor: pointer;
+}
+.window-box{
+  //position:relative;
+  user-select: none;
+}
+#image4ex{
+  top: 340px;
+  left: 20px;
+}
+.explain li{
+  float:left;
+  padding:0px 7px;
+  cursor: pointer;
+  color:#3f9f4b;
+  list-style-type: none;
+  text-decoration: underline;
+}
+.explain{
+  padding-bottom:150px;
+}
+.menuBlockWindow{
+  list-style-type: none;
+  margin:0px
+  padding-bottom:0px
+}
+.fileBlockex{
+  //padding-top: -10px;
+}
+.menuBlockWindow li,a{
+  padding-bottom: 0;
+  cursor:pointer;
+  //padding-left:-1em;
+  //text-indent: -1em;
+}

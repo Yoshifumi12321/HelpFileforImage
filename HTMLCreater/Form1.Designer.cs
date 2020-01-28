@@ -41,6 +41,7 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.addTabPage = new System.Windows.Forms.TabPage();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SnipOri = new HTMLCreater.Sniping();
             this.sniping1 = new HTMLCreater.Sniping();
             this.tabControl1.SuspendLayout();
@@ -56,11 +57,11 @@
             // imageSelectBT
             // 
             this.imageSelectBT.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.imageSelectBT.Location = new System.Drawing.Point(20, 15);
+            this.imageSelectBT.Location = new System.Drawing.Point(27, 27);
             this.imageSelectBT.Name = "imageSelectBT";
             this.imageSelectBT.Size = new System.Drawing.Size(75, 23);
             this.imageSelectBT.TabIndex = 1;
-            this.imageSelectBT.Text = "画像を表示";
+            this.imageSelectBT.Text = "画像を変更";
             this.imageSelectBT.UseVisualStyleBackColor = true;
             this.imageSelectBT.Click += new System.EventHandler(this.imageSelectBT_Click);
             // 
@@ -68,7 +69,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.Location = new System.Drawing.Point(101, 20);
+            this.label1.Location = new System.Drawing.Point(108, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 15);
             this.label1.TabIndex = 2;
@@ -78,7 +79,7 @@
             // 
             this.selectedFileName.AutoSize = true;
             this.selectedFileName.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.selectedFileName.Location = new System.Drawing.Point(167, 20);
+            this.selectedFileName.Location = new System.Drawing.Point(174, 32);
             this.selectedFileName.Name = "selectedFileName";
             this.selectedFileName.Size = new System.Drawing.Size(133, 15);
             this.selectedFileName.TabIndex = 3;
@@ -87,7 +88,7 @@
             // runBT
             // 
             this.runBT.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.runBT.Location = new System.Drawing.Point(511, 471);
+            this.runBT.Location = new System.Drawing.Point(262, 488);
             this.runBT.Name = "runBT";
             this.runBT.Size = new System.Drawing.Size(89, 24);
             this.runBT.TabIndex = 16;
@@ -121,7 +122,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 123);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(588, 342);
+            this.tabControl1.Size = new System.Drawing.Size(589, 342);
             this.tabControl1.TabIndex = 25;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -130,13 +131,12 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
-            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening_1);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(160, 26);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(159, 22);
             this.toolStripMenuItem1.Text = "現在のタブを削除";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
@@ -146,7 +146,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(580, 314);
+            this.tabPage1.Size = new System.Drawing.Size(581, 314);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -158,11 +158,23 @@
             this.addTabPage.Location = new System.Drawing.Point(4, 24);
             this.addTabPage.Name = "addTabPage";
             this.addTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.addTabPage.Size = new System.Drawing.Size(580, 314);
+            this.addTabPage.Size = new System.Drawing.Size(581, 314);
             this.addTabPage.TabIndex = 1;
             this.addTabPage.Text = "+";
             this.addTabPage.Click += new System.EventHandler(this.addTabPage_Click);
             this.addTabPage.Enter += new System.EventHandler(this.tabPage2_Enter);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1.Location = new System.Drawing.Point(500, 471);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(100, 16);
+            this.checkBox1.TabIndex = 26;
+            this.checkBox1.Text = "設定を保存する";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // SnipOri
             // 
@@ -184,7 +196,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(614, 531);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(613, 536);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.titlebox);
             this.Controls.Add(this.label7);
@@ -192,8 +206,11 @@
             this.Controls.Add(this.selectedFileName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.imageSelectBT);
+            this.MaximumSize = new System.Drawing.Size(629, 575);
+            this.MinimumSize = new System.Drawing.Size(629, 575);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Main Pannel";
+            this.Shown += new System.EventHandler(this.imageSelectBT_Click);
             this.tabControl1.ResumeLayout(false);
             this.contextMenuStrip1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -218,6 +235,7 @@
         public System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

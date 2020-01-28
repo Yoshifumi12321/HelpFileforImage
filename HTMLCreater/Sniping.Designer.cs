@@ -83,6 +83,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 77);
             this.panel1.TabIndex = 19;
+            this.panel1.Click += new System.EventHandler(this.panel1_Click);
             // 
             // label3
             // 
@@ -115,6 +116,7 @@
             this.x0.Name = "x0";
             this.x0.Size = new System.Drawing.Size(38, 19);
             this.x0.TabIndex = 5;
+            this.x0.Click += new System.EventHandler(this.y0_Click);
             // 
             // label4
             // 
@@ -137,6 +139,7 @@
             this.y0.Name = "y0";
             this.y0.Size = new System.Drawing.Size(38, 19);
             this.y0.TabIndex = 8;
+            this.y0.Click += new System.EventHandler(this.y0_Click);
             // 
             // label5
             // 
@@ -159,6 +162,7 @@
             this.x1.Name = "x1";
             this.x1.Size = new System.Drawing.Size(38, 19);
             this.x1.TabIndex = 10;
+            this.x1.Click += new System.EventHandler(this.y0_Click);
             // 
             // y1
             // 
@@ -171,6 +175,7 @@
             this.y1.Name = "y1";
             this.y1.Size = new System.Drawing.Size(38, 19);
             this.y1.TabIndex = 12;
+            this.y1.Click += new System.EventHandler(this.y0_Click);
             // 
             // label6
             // 

@@ -21,5 +21,15 @@ namespace HTMLCreater
         {
 
         }
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void y0_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

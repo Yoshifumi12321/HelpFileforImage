@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html> 
+<html lang = "JP"> 
+<head> 
+<meta charset = "utf-8"> 
+<title>MicroView</title> 
+<link rel = "stylesheet" href =stylesheet.css> 
+</head> 
+<body> 
+<h3 class="captionTitle">MicroView</h3> 
+<img id="target" src=" C:\Users\YOSHIFUMI\Pictures\main.png " alt="C:\Users\YOSHIFUMI\Pictures\main.png" usemap="#main"> 
+ <map name = "main"> 
+<area id = "range0" class="image" shape="rect" coords=" 23,168,599,499 " alt="image"> 
+<p id = "range0ex" class="imageset">LaserのON/OFFと設定を行います。<br>①	レーザーのメーカー、型番を表します。<br>②	Laserの接続状態・操作状態を表します。<br>Online：オンライン、コントロール可<br>Offline：オフライン、コントロール不可<br>Controllable in Shutter tab：シャッタータブのみでの制御<br>③	レーザーのON/OFFを切り替えるスイッチです(Emission)。<br>④	LaserのEmission状態を表します。<br>⑤	Laserの出力を設定します。⑦のスライドバーと連動し、細かなパワーの調節ができます。Laserにより入力の下限・上限は異なり、それを超える入力はできません。単位はmWです。<br>⑥	設定した出力に対して、実際のLaserの出力を表示します。単位はmWです。<br>⑦	Laser出力の設定を行うスライドバーです。⑤の出力設定と連動しています。<br></p> 
+<area id = "range1" class="image" shape="rect" coords=" 683,157,1056,528 " alt="image"> 
+<p id = "range1ex" class="imageset">Shutterによるレーザーの制御を行います。予め切り替えスイッチのケーブル(各2本)を、使用するWave lengthに接続する必要があります。<br>①	ShutterのON/OFF状態の表示・切り替えを行います。<br>②	そのシャッターで制御するLaserの波長を選択します。これは切り替えスイッチに接続しているケーブル・波長と対応づける必要があります。<br>③	レーザーの何％を出力させるか設定します。横のスライドバーと連動しており、スライドバーからも値を変更できます。<br></p> 
+<area id = "range2" class="image" shape="rect" coords=" 11,622,612,918 " alt="image"> 
+<p id = "range2ex" class="imageset">タイムラプスの設定・撮影を行います。<br>①	チェックをつけると、カメラ2・3の動作をカメラ1にシンクロさせます。<br>②	フレームレートを設定します。<br>③	何フレーム録画するかを設定ます。<br>④	カメラに対応づけるシャッターを選択します。2つまで選択可能ですが、1つのシャッターを複数のカメラに対応づけることはできません。<br>⑤	カメラ1に対してのディレイを設定できます。Cam1 frameではCam1のRecording Rate(Hz)で、ディレイ分のframe数を設定します。<br>⑥	カメラに信号を入れるかどうかを選択します。<br>⑦	シャッターに信号を入力するかを選択します。<br>⑧	カメラのトリガの種類を選択します。<br></p> 
+<area id = "range3" class="image" shape="rect" coords=" 771,598,1093,850 " alt="image"> 
+<p id = "range3ex" class="imageset">ポジションの登録を行います。登録されたポジションはタイムラプス等で使用します。<br>①	現在のポジションを登録します。<br>②	登録されている全てのポジションを削除します。個別の削除は⑦のClearを使用します。<br>③	ポジションを選択します。これは順番の入れ替えやタイムラプスの際に使用します。<br>④	ポジションの詳細です。タイムラプスではチェックされたポジションを昇順で移動します。<br>⑤	クリックでそのポジションへの移動を行います。<br></p> 
+</map> 
+<!--jQuery property--> 
+<script src = "jquery-3.3.1.min.js"></script> 
+<script src = "jQuery.js"></script> 
+<!----> 
+</body>
+</html> 
+
