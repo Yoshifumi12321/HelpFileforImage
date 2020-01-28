@@ -1,0 +1,11 @@
+C:\Users\YOSHIFUMI\source\repos\HTMLCreater\HTMLCreater\bin\Debug\HTMLCreater.exe.config
+C:\Users\YOSHIFUMI\source\repos\HTMLCreater\HTMLCreater\bin\Debug\HTMLCreater.exe
+C:\Users\YOSHIFUMI\source\repos\HTMLCreater\HTMLCreater\bin\Debug\HTMLCreater.pdb
+C:\Users\YOSHIFUMI\source\repos\HTMLCreater\HTMLCreater\obj\Debug\HTMLCreater.csprojAssemblyReference.cache
+C:\Users\YOSHIFUMI\source\repos\HTMLCreater\HTMLCreater\obj\Debug\HTMLCreater.Form1.resources
+C:\Users\YOSHIFUMI\source\repos\HTMLCreater\HTMLCreater\obj\Debug\HTMLCreater.Properties.Resources.resources
+C:\Users\YOSHIFUMI\source\repos\HTMLCreater\HTMLCreater\obj\Debug\HTMLCreater.csproj.GenerateResource.cache
+C:\Users\YOSHIFUMI\source\repos\HTMLCreater\HTMLCreater\obj\Debug\HTMLCreater.exe
+C:\Users\YOSHIFUMI\source\repos\HTMLCreater\HTMLCreater\obj\Debug\HTMLCreater.pdb
+C:\Users\YOSHIFUMI\source\repos\HTMLCreater\HTMLCreater\obj\Debug\HTMLCreater.Form2.resources
+C:\Users\YOSHIFUMI\source\repos\HTMLCreater\HTMLCreater\obj\Debug\HTMLCreater.Sniping.resources
